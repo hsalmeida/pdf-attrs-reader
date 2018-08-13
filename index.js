@@ -2,7 +2,9 @@ let fs = require('fs');
 let PDFParser = require("pdf2json");
 let path = require('path');
 
-const diretorio = "I:/Documentos/Cyberpunk 2020 - Definitive Collection v1.0/";
+let diretorioArg = process.argv[2];
+
+let diretorio = "E:/OneDrive/MPU ESTRATÉGIA_/" + diretorioArg + "/";
 
 fs.readdir(diretorio, function (err, files) {
     files.forEach(file => {
